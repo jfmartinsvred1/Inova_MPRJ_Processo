@@ -1,6 +1,11 @@
-﻿namespace Desafio_Backend.Controllers
+﻿using Microsoft.AspNetCore.Mvc;
+
+namespace Desafio_Backend.Controllers
 {
-    public class CepController
+    [ApiController]
+    [Route("api/v1/[controller]")]
+    public class CepController:ControllerBase
     {
+
     }
 }

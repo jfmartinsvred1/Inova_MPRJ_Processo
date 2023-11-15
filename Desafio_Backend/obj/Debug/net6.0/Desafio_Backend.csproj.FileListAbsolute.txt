@@ -1,0 +1,7 @@
+C:\Users\Joao\Desktop\Inova_MPRJ\Desafio_Backend\obj\Debug\net6.0\Desafio_Backend.csproj.AssemblyReference.cache
+C:\Users\Joao\Desktop\Inova_MPRJ\Desafio_Backend\obj\Debug\net6.0\Desafio_Backend.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Joao\Desktop\Inova_MPRJ\Desafio_Backend\obj\Debug\net6.0\Desafio_Backend.AssemblyInfoInputs.cache
+C:\Users\Joao\Desktop\Inova_MPRJ\Desafio_Backend\obj\Debug\net6.0\Desafio_Backend.AssemblyInfo.cs
+C:\Users\Joao\Desktop\Inova_MPRJ\Desafio_Backend\obj\Debug\net6.0\Desafio_Backend.csproj.CoreCompileInputs.cache
+C:\Users\Joao\Desktop\Inova_MPRJ\Desafio_Backend\obj\Debug\net6.0\Desafio_Backend.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Joao\Desktop\Inova_MPRJ\Desafio_Backend\obj\Debug\net6.0\Desafio_Backend.MvcApplicationPartsAssemblyInfo.cache
