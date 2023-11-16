@@ -4,6 +4,7 @@ namespace Desafio_Backend.Dto
 {
     public class CepResponse
     {
+        //Propriedades Retornadas Na Api
         public string? Cep { get; set; }
 
         public string? Logradouro { get; set; }

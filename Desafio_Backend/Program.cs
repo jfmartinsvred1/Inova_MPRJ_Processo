@@ -15,10 +15,13 @@ builder.Services.AddSwaggerGen();
 //Inversão de dependência.(CONCEITO SOLID)
 builder.Services.AddSingleton<ICepService, CepService>();
 builder.Services.AddSingleton<IViaCepApi, ViaCepRest>();
+builder.Services.AddSingleton<ICorretoraService, CorretoraService>();
+builder.Services.AddSingleton<IBrasilApi, BrasilRest>();
 
 
 //Adicionando o Mapping
 builder.Services.AddAutoMapper(typeof(CepMapping));
+builder.Services.AddAutoMapper(typeof(CorretoraMapping));
 
 
 var app = builder.Build();
