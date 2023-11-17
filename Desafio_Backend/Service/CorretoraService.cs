@@ -16,10 +16,16 @@ namespace Desafio_Backend.Service
             _brasilApi = brasilApi;
         }
 
-        public async Task<ResponseGeneric<CorretoraResponse>> BuscarTodasCorretoras()
+        public async Task<ResponseGeneric<CorretoraResponse>> BuscarCorretora(string cnpjCorretora)
         {
-            var corretoras = await _brasilApi.BuscarCorretoras();
-            return _mapper.Map<ResponseGeneric<CorretoraResponse>>(corretoras);
+            var corretora = await _brasilApi.BuscarCorretora(cnpjCorretora);
+            return _mapper.Map<ResponseGeneric<CorretoraResponse>>(corretora);
+        }
+
+        public async Task<ResponseGeneric<List<CorretoraResponse>>> BuscarTodasCorretoras()
+        {
+            var corretora = await _brasilApi.BuscarCorretoras();
+            return _mapper.Map<ResponseGeneric<List<CorretoraResponse>>>(corretora);
         }
     }
 }

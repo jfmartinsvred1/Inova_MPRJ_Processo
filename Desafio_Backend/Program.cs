@@ -16,7 +16,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddSingleton<ICepService, CepService>();
 builder.Services.AddSingleton<IViaCepApi, ViaCepRest>();
 builder.Services.AddSingleton<ICorretoraService, CorretoraService>();
-builder.Services.AddSingleton<IBrasilApi, BrasilRest>();
+builder.Services.AddSingleton<IBrasilApi, BrasilApiRest>();
 
 
 //Adicionando o Mapping

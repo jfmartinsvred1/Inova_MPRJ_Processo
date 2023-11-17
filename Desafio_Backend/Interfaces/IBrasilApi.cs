@@ -5,6 +5,7 @@ namespace Desafio_Backend.Interfaces
 {
     public interface IBrasilApi
     {
-        Task<ResponseGeneric<CorretoraModel>> BuscarCorretoras();
+        Task<ResponseGeneric<List<CorretoraModel>>> BuscarCorretoras();
+        Task<ResponseGeneric<CorretoraModel>> BuscarCorretora(string cnpjCorretora);
     }
 }

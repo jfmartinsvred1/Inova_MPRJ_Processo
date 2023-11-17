@@ -28,5 +28,18 @@ namespace Desafio_Backend.Controllers
                 return StatusCode((int)response.CodigoHttp, response.ErrorRetorno);
             }
         }
+        [HttpGet("buscar/{cnpj}")]
+        public async Task<IActionResult> BuscarCorretora([FromRoute]string cnpj)
+        {
+            var response = await _corretoraService.BuscarCorretora(cnpj);
+            if (response.CodigoHttp == HttpStatusCode.OK)
+            {
+                return Ok(response.DadosRetorno);
+            }
+            else
+            {
+                return StatusCode((int)response.CodigoHttp, response.ErrorRetorno);
+            }
+        }
     }
 }
