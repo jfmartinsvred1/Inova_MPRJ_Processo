@@ -33,7 +33,31 @@ namespace Desafio_Backend.Rest
             return response;
         }
 
-        
+        public async Task<ResponseGeneric<List<FeriadoModel>>> BuscarFeriados(string ano)
+        {
+            var request = new HttpRequestMessage(HttpMethod.Get, $"https://brasilapi.com.br/api/feriados/v1/{ano}");
+            var response = new ResponseGeneric<List<FeriadoModel>>();
+            using (var client = new HttpClient())
+            {
+                var responseViaCepApi = await client.SendAsync(request);
+                var contentResp = await responseViaCepApi.Content.ReadAsStringAsync();
+                var objResponse = JsonSerializer.Deserialize<List<FeriadoModel>>(contentResp);
+
+                if (responseViaCepApi.IsSuccessStatusCode)
+                {
+                    response.CodigoHttp = responseViaCepApi.StatusCode;
+                    response.DadosRetorno = objResponse;
+
+                }
+                else
+                {
+                    response.CodigoHttp = responseViaCepApi.StatusCode;
+                    response.ErrorRetorno = JsonSerializer.Deserialize<ExpandoObject>(contentResp);
+                }
+
+            }
+            return response;
+        }
 
         async Task<ResponseGeneric<List<CorretoraModel>>> IBrasilApi.BuscarCorretoras()
         {

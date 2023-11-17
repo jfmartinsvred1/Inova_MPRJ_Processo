@@ -17,11 +17,13 @@ builder.Services.AddSingleton<ICepService, CepService>();
 builder.Services.AddSingleton<IViaCepApi, ViaCepRest>();
 builder.Services.AddSingleton<ICorretoraService, CorretoraService>();
 builder.Services.AddSingleton<IBrasilApi, BrasilApiRest>();
+builder.Services.AddSingleton<IFeriadoService, FeriadoService>();
 
 
 //Adicionando o Mapping
 builder.Services.AddAutoMapper(typeof(CepMapping));
 builder.Services.AddAutoMapper(typeof(CorretoraMapping));
+builder.Services.AddAutoMapper(typeof(FeriadoMapping));
 
 
 var app = builder.Build();

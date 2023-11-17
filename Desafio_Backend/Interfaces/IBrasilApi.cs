@@ -7,5 +7,7 @@ namespace Desafio_Backend.Interfaces
     {
         Task<ResponseGeneric<List<CorretoraModel>>> BuscarCorretoras();
         Task<ResponseGeneric<CorretoraModel>> BuscarCorretora(string cnpjCorretora);
+        Task<ResponseGeneric<List<FeriadoModel>>> BuscarFeriados(string ano);
+        
     }
 }
