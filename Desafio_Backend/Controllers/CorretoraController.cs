@@ -14,6 +14,13 @@ namespace Desafio_Backend.Controllers
         {
             _corretoraService = corretoraService;
         }
+        /// <summary>
+        /// Busca todas corretoras 
+        /// </summary>
+        /// <remarks>
+        /// Busca todas corretoras listadas na CVM
+        /// </remarks>
+        /// <returns></returns>
 
         [HttpGet("buscar")]
         public async Task<IActionResult> BuscarCorretoras()
@@ -28,6 +35,14 @@ namespace Desafio_Backend.Controllers
                 return StatusCode((int)response.CodigoHttp, response.ErrorRetorno);
             }
         }
+        /// <summary>
+        /// Busca uma corretora listada na CVM
+        /// </summary>
+        /// <remarks>
+        /// Busca uma corretora pelo seu cnpj e retorna os dados em formato JSON
+        /// </remarks>
+        /// <param name="cnpj"></param>
+        /// <returns></returns>
         [HttpGet("buscar/{cnpj}")]
         public async Task<IActionResult> BuscarCorretora([FromRoute]string cnpj)
         {

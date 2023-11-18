@@ -14,7 +14,16 @@ namespace Desafio_Backend.Controllers
         {
             _cepService = cepService;
         }
+        /// <summary>
+        /// Busca o CEP passado no parâmetro
+        /// </summary>
+        /// <remarks>
+        /// Faz a busca do cep informado e retorna os dados do cep correspondente e retorna os dados em formato JSON
+        /// </remarks>
+        /// <param name="cep"></param>
+        /// <returns></returns>
         [HttpGet("buscar/{cep}")]
+        [ProducesResponseType(200)]
         public async Task<IActionResult> BuscarCep([FromRoute] string cep)
         {
             var response = await _cepService.BuscarEnderecoPorCep(cep);

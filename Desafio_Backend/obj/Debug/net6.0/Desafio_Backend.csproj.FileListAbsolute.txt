@@ -32,3 +32,9 @@ C:\Users\Joao\Desktop\Inova_MPRJ\Desafio_Backend\obj\Debug\net6.0\refint\Desafio
 C:\Users\Joao\Desktop\Inova_MPRJ\Desafio_Backend\obj\Debug\net6.0\Desafio_Backend.pdb
 C:\Users\Joao\Desktop\Inova_MPRJ\Desafio_Backend\obj\Debug\net6.0\Desafio_Backend.genruntimeconfig.cache
 C:\Users\Joao\Desktop\Inova_MPRJ\Desafio_Backend\obj\Debug\net6.0\ref\Desafio_Backend.dll
+C:\Users\Joao\Desktop\Inova_MPRJ\Desafio_Backend\bin\Debug\net6.0\Desafio_Backend.xml
+C:\Users\Joao\Desktop\Inova_MPRJ\Desafio_Backend\obj\Debug\net6.0\Desafio_Backend.xml
+C:\Users\Joao\Desktop\Inova_MPRJ\Desafio_Backend\bin\Debug\net6.0\System.Net.Http.Formatting.dll
+C:\Users\Joao\Desktop\Inova_MPRJ\Desafio_Backend\bin\Debug\net6.0\System.Web.Http.dll
+C:\Users\Joao\Desktop\Inova_MPRJ\Desafio_Backend\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\Joao\Desktop\Inova_MPRJ\Desafio_Backend\bin\Debug\net6.0\Swashbuckle.Core.dll

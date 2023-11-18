@@ -15,6 +15,14 @@ namespace Desafio_Backend.Controllers
         {
             _feriadoService = feriadoService;
         }
+        /// <summary>
+        /// Busca todos fériados
+        /// </summary>
+        /// <remarks>
+        /// Busca todos fériados no ano passado no parametro e retorna os dados em formato JSON
+        /// </remarks>
+        /// <param name="cnpj"></param>
+        /// <returns></returns>
         [HttpGet("buscar/{ano}")]
         public async Task<IActionResult> BuscarFeriados([FromRoute] string ano)
         {

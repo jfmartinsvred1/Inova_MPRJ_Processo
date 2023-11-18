@@ -4,7 +4,6 @@ namespace Desafio_Backend.Models
 {
     public class CepModel
     {
-        //Propriedades que vem da API ViaCep
 
         [JsonPropertyName("cep")]
         public string? Cep { get; set; }
