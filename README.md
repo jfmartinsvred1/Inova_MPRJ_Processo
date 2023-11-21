@@ -14,7 +14,10 @@ Instalação
 
 Comandos para execução local
 
-.......
+    1. Entrar na pasta /Desafio_Backend
+	2. Abrir o prompt neste diretório
+	3. Digitar o codigo "dotnet run" dentro do diretório /Inova_MPRJ/Desafio_Backend
+	4. Abrir no navegador a url como padrão "https://localhost:7053/swagger/index.html", caso a url passada no prompt seja diferente da porta 7053 passe a url indicada + /swagger/index.html caso a url nâo seja a mesma indicada
 
 Endpoints Disponíveis
 
@@ -58,7 +61,7 @@ curl -X GET "https://localhost:5001/api/v1/Corretora/buscar/{cnpj}"
 
 Consulta de Feriados
 
-curl -X GET "/api/v1/Feriado/buscar/{ano}" 
+curl -X GET "https://localhost:5001/api/v1/Feriado/buscar/{ano}" 
 
 
 https://localhost:5001
